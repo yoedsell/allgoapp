@@ -5,9 +5,3 @@ CREATE TABLE admin (
     Password varchar(45) NOT NULL,
     PRIMARY KEY (Email)
 )
-
-CREATE TABLE login (
-    Email varchar(45) NOT NULL,
-    Password varchar(45) NOT NULL,
-    PRIMARY KEY (Email)
-)
