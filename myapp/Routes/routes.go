@@ -11,17 +11,12 @@ import (
 func InitializeRoutes() {
 
 	router := mux.NewRouter()
-	// router.HandleFunc("/home", Controller.HomeHandler)
-	// router.HandleFunc("/student", Controller.Addstudent)
 
+	//student
 	router.HandleFunc("/student", Controller.Addstudent).Methods("POST")
-
 	router.HandleFunc("/student/{sid}", Controller.GetStud).Methods("GET")
-
 	router.HandleFunc("/student/{sid}", Controller.UpdateStud).Methods("PUT")
-
 	router.HandleFunc("/student/{sid}", Controller.DeleteStud).Methods("DELETE")
-
 	router.HandleFunc("/students", Controller.GetAllStuds)
 
 	//course
